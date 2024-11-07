@@ -39,7 +39,7 @@ def scatter(model, model_name, data, new_point, features, color_scale, title):
     return fig, new_cluster
 
 st.set_page_config(
-    page_title="XXXXX - Unsupervised Learning", #XXXXX diisi dengan 5 digit NPM
+    page_title="11745 - Unsupervised Learning", #XXXXX diisi dengan 5 digit NPM
     page_icon="📊",
     layout='wide',
     initial_sidebar_state="expanded",
@@ -49,11 +49,11 @@ uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["cs
 
 if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
-    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - YYYYY</h1>", unsafe_allow_html=True) #YYYYY diisi dengan nama panggilan
+    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Radito</h1>", unsafe_allow_html=True) #YYYYY diisi dengan nama panggilan
     st.dataframe(input_data)
     
     #direktori tempat penyimpanan ketiga model yang telah di dump sebelumnya
-    model_directory = r'D:\Tugas\Sem 5\Mesin Learning\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_11745\credit_card.csv'
+    model_directory = r'D:\Tugas\Sem 5\Mesin Learning\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_11745'
     model_path = {
         'AGG_model' : os.path.join(model_directory, r'AGG_model.pkl'),
         'KMeans_model' : os.path.join(model_directory, r'KMeans_model.pkl'),
